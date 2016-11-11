@@ -23,6 +23,7 @@ namespace Game1
         {
             var gw = new GameWindow(1024, 768);
             gw.AddTexture("sample_texture_1.jpg");
+            gw.AddTextureLight(0, 0, 0.65f);
             gw.Run();
         }
     }
