@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using Engine1Core;
+using OpenTK;
 
 namespace Game1
 {
@@ -21,9 +22,15 @@ namespace Game1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var gw = new GameWindow(1024, 768);
-            gw.AddTexture("sample_texture_1.jpg");
-            gw.AddTextureLight(0, 0, 0.65f);
+            var gw = new Engine1Core.GameWindow(1024, 768);
+
+            var actor = new SimpleActor(Vector2.Zero);
+            actor.SetTexture("sample_texture_1.jpg");
+
+            var light = new LightSource(Vector2.Zero, 0.65f);
+            
+            gw.AddGameObject(actor);
+            gw.AddGameObject(light);
             gw.Run();
         }
     }
