@@ -1,0 +1,16 @@
+c:\users\krish\documents\visual studio 2015\Projects\Game1\Game1\bin\Debug\Game1.exe.config
+c:\users\krish\documents\visual studio 2015\Projects\Game1\Game1\bin\Debug\Game1.exe
+c:\users\krish\documents\visual studio 2015\Projects\Game1\Game1\bin\Debug\Game1.pdb
+c:\users\krish\documents\visual studio 2015\Projects\Game1\Game1\bin\Debug\Engine1.dll
+c:\users\krish\documents\visual studio 2015\Projects\Game1\Game1\bin\Debug\OpenTK.dll
+c:\users\krish\documents\visual studio 2015\Projects\Game1\Game1\bin\Debug\Engine1.pdb
+c:\users\krish\documents\visual studio 2015\Projects\Game1\Game1\bin\Debug\OpenTK.xml
+c:\users\krish\documents\visual studio 2015\Projects\Game1\Game1\obj\Debug\Game1.csprojResolveAssemblyReference.cache
+c:\users\krish\documents\visual studio 2015\Projects\Game1\Game1\obj\Debug\Game1.Form1.resources
+c:\users\krish\documents\visual studio 2015\Projects\Game1\Game1\obj\Debug\Game1.Properties.Resources.resources
+c:\users\krish\documents\visual studio 2015\Projects\Game1\Game1\obj\Debug\Game1.csproj.GenerateResource.Cache
+c:\users\krish\documents\visual studio 2015\Projects\Game1\Game1\obj\Debug\Game1.exe
+c:\users\krish\documents\visual studio 2015\Projects\Game1\Game1\obj\Debug\Game1.pdb
+c:\users\krish\documents\visual studio 2015\Projects\Game1\Game1\bin\Debug\Content\earth.png
+c:\users\krish\documents\visual studio 2015\Projects\Game1\Game1\bin\Debug\Content\TileSet1.png.png
+c:\users\krish\documents\visual studio 2015\Projects\Game1\Game1\bin\Debug\Content\sample_texture_1.jpg
