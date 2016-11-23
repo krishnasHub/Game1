@@ -11,13 +11,15 @@ namespace Game1.Levels
 {
     public class Level : GameLevel
     {
-        public Level(string levelFileName, string tileSetName) : base(levelFileName, tileSetName)
+        public Level(string levelFileName) : base(levelFileName)
         {
             // Nothing as of now..
         }
 
         public override void Render()
         {
+            base.Render();
+
             for (int x = 0; x < this.Width; x++)
             {
                 for (int y = 0; y < this.Height; y++)

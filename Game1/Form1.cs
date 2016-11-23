@@ -28,7 +28,7 @@ namespace Game1
             var g = new Game(1280, 960);
             Constants.RootFolder = "Content";
 
-            var level2 = new Level("Level2.tmx", "tile_set1.png");
+            var level2 = new Level("Level2.tmx");
             g.SetLevel(level2);
 
             g.Run();
