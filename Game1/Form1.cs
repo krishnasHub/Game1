@@ -13,6 +13,7 @@ using OpenTK;
 using Engine2.Core;
 using Engine2.Util;
 using Game1.Levels;
+using Engine2.Actor;
 
 namespace Game1
 {
@@ -30,6 +31,13 @@ namespace Game1
 
             var level2 = new Level("Level2.tmx");
             g.SetLevel(level2);
+
+            var a = new GameActor("tile_wall.jpg");
+            a.SetScale(0.4f);
+            a.Position = new Vector2(0, 0);
+            a.Velocity = new Vector2(1.5f, 0f);
+
+            level2.AddActor(a);
 
             g.Run();
         }
