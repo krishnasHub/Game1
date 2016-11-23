@@ -8,16 +8,18 @@ using System.Threading.Tasks;
 
 namespace Game1
 {
-    class SimpleActor : Actor
+    public class SimpleLight : LightSource
     {
-        public SimpleActor(Vector2 pos) : base(pos)
+        public SimpleLight(Vector2 pos, float intensity) : base(pos, intensity)
         {
-            // do nothing..
+
         }
 
         public override void Tick()
         {
-            Position.X += 10f;
+            base.Tick();
+
+            //Position.X += 10.0f;            
         }
     }
 }

@@ -8,8 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using Engine1Core;
+
 using OpenTK;
+using Engine2.Core;
+using Engine2.Util;
+using Game1.Levels;
 
 namespace Game1
 {
@@ -22,16 +25,13 @@ namespace Game1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var gw = new Engine1Core.GameWindow(1024, 768);
+            var g = new Game(1280, 960);
+            Constants.RootFolder = "Content";
 
-            var actor = new SimpleActor(Vector2.Zero);
-            actor.SetTexture("sample_texture_1.jpg");
+            var level2 = new Level("Level2.tmx", "tile_set1.png");
+            g.SetLevel(level2);
 
-            var light = new LightSource(Vector2.Zero, 0.65f);
-            
-            gw.AddGameObject(actor);
-            gw.AddGameObject(light);
-            gw.Run();
+            g.Run();
         }
     }
 }
