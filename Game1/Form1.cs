@@ -26,19 +26,20 @@ namespace Game1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var g = new Game(1280, 960);
+            var g = new Game(1280, 960, 1.5f);
             Constants.RootFolder = "Content";
 
             var level2 = new Level("Level2.tmx");
             g.SetLevel(level2);
 
             var a = new GameActor("tile_wall.jpg");
-            a.SetScale(0.4f);
+            a.SetScale(0.05f);
             a.Position = new Vector2(0, 0);
-            a.Velocity = new Vector2(1.5f, 0f);
+            a.Velocity = new Vector2(-1.5f, 0f);
+            a.BindToView = true;
 
             level2.AddActor(a);
-
+            
             g.Run();
         }
     }
