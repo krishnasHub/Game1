@@ -14,6 +14,7 @@ using Engine2.Core;
 using Engine2.Util;
 using Game1.Levels;
 using Engine2.Actor;
+using Engine2.Physics.Block;
 
 namespace Game1
 {
@@ -34,9 +35,12 @@ namespace Game1
 
             var a = new GameActor("tile_wall.jpg");
             a.SetScale(0.05f);
-            a.Position = new Vector2(0, 0);
-            a.Velocity = new Vector2(-1.5f, 0f);
+            a.Position = new Vector2(450, 1050);
+            a.Velocity = new Vector2(0f, 0.22f);
             a.BindToView = true;
+
+            //level2.SetBlockPhysics(0, new SolidBlockPhysics());
+            level2.SetBlockPhysics(2, new SolidBlockPhysics());
 
             level2.AddActor(a);
             

@@ -17,3 +17,5 @@ C:\Users\krish\Documents\Visual Studio 2015\Projects\Game1\Game1\bin\Debug\App.c
 C:\Users\krish\Documents\Visual Studio 2015\Projects\Game1\Game1\bin\Debug\Engine2.dll
 C:\Users\krish\Documents\Visual Studio 2015\Projects\Game1\Game1\bin\Debug\Engine2.pdb
 C:\Users\krish\Documents\Visual Studio 2015\Projects\Game1\Game1\bin\Debug\Content\Level2.tmx
+C:\Users\krish\Documents\Visual Studio 2015\Projects\Game1\Game1\bin\Debug\Engine2.Physics.dll
+C:\Users\krish\Documents\Visual Studio 2015\Projects\Game1\Game1\bin\Debug\Engine2.Physics.pdb

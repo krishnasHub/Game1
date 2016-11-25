@@ -36,6 +36,9 @@
     <Reference Include="Engine2">
       <HintPath>..\..\Engine2\Engine2\bin\Debug\Engine2.dll</HintPath>
     </Reference>
+    <Reference Include="Engine2.Physics">
+      <HintPath>..\..\Engine2\Engine2.Physics\bin\Debug\Engine2.Physics.dll</HintPath>
+    </Reference>
     <Reference Include="OpenTK, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\CSOpenGL1\CSOpenGL1\bin\Debug\OpenTK.dll</HintPath>
