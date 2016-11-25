@@ -15,6 +15,8 @@ using Engine2.Util;
 using Game1.Levels;
 using Engine2.Actor;
 using Engine2.Physics.Block;
+using Engine2.Physics.Actor;
+using Game1.Actors;
 
 namespace Game1
 {
@@ -33,17 +35,26 @@ namespace Game1
             var level2 = new Level("Level2.tmx");
             g.SetLevel(level2);
 
-            var a = new GameActor("tile_wall.jpg");
+            var a = new MyActor1("tile_wall.jpg");
+            a.Name = "Wall";
             a.SetScale(0.05f);
-            a.Position = new Vector2(450, 1050);
-            a.Velocity = new Vector2(0f, 0.22f);
+            a.Position = new Vector2(350, 1050);
+            a.Velocity = new Vector2(0.25f, 0f);
             a.BindToView = true;
+            a.PhysicsComponent = new ActorPhysics();
 
-            //level2.SetBlockPhysics(0, new SolidBlockPhysics());
+            var b = new MyActor1("tile_grass.png");
+            b.Name = "Grass";
+            b.SetScale(0.1f);
+            b.Position = new Vector2(450, 1050);
+            b.Velocity = new Vector2(-0.25f, 0f);
+            b.PhysicsComponent = new ActorPhysics();
+
             level2.SetBlockPhysics(2, new SolidBlockPhysics());
 
             level2.AddActor(a);
-            
+            level2.AddActor(b);
+
             g.Run();
         }
     }
