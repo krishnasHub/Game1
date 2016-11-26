@@ -17,6 +17,7 @@ using Engine2.Actor;
 using Engine2.Physics.Block;
 using Engine2.Physics.Actor;
 using Game1.Actors;
+using OpenTK.Input;
 
 namespace Game1
 {
@@ -29,7 +30,7 @@ namespace Game1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var g = new Game(1280, 960, 1.5f);
+            var g = new Game(1280, 960, 4.5f);
             Constants.RootFolder = "Content";
 
             var level2 = new Level("Level2.tmx");
@@ -39,7 +40,7 @@ namespace Game1
             a.Name = "Wall";
             a.SetScale(0.05f);
             a.Position = new Vector2(350, 1050);
-            a.Velocity = new Vector2(0.25f, 0f);
+            //a.Velocity = new Vector2(0.25f, 0f);
             a.BindToView = true;
             a.PhysicsComponent = new ActorPhysics();
 
@@ -47,13 +48,22 @@ namespace Game1
             b.Name = "Grass";
             b.SetScale(0.1f);
             b.Position = new Vector2(450, 1050);
-            b.Velocity = new Vector2(-0.25f, 0f);
+            //b.Velocity = new Vector2(-1f, 0f);
             b.PhysicsComponent = new ActorPhysics();
 
             level2.SetBlockPhysics(2, new SolidBlockPhysics());
 
             level2.AddActor(a);
             level2.AddActor(b);
+
+            g.AddKeyEvent(Key.Right, a.MovePlayer);
+            g.AddKeyEvent(Key.D, a.MovePlayer);
+            g.AddKeyEvent(Key.Left, a.MovePlayer);
+            g.AddKeyEvent(Key.A, a.MovePlayer);
+            g.AddKeyEvent(Key.Up, a.MovePlayer);
+            g.AddKeyEvent(Key.W, a.MovePlayer);
+            g.AddKeyEvent(Key.Down, a.MovePlayer);
+            g.AddKeyEvent(Key.S, a.MovePlayer);
 
             g.Run();
         }

@@ -1,5 +1,6 @@
 ﻿using Engine2.Core;
 using Engine2.Util;
+using OpenTK.Input;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -19,9 +20,9 @@ namespace Game1.Levels
         public override void Tick()
         {
             base.Tick();
-
-
         }
+
+        
 
     }
 }
