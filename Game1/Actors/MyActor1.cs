@@ -29,28 +29,32 @@ namespace Game1.Actors
 
         public void MovePlayer(InputEvent keyInput)
         {
-            float value = 3f;
+            float value = 2f;
             
             switch (keyInput.Key)
             {
                 case Key.Left:
                 case Key.A:
-                    this.Position += new Vector2(-value, 0);
+                    if(keyInput.IsDown)
+                        this.Position += new Vector2(-value, 0);
                     break;
 
                 case Key.Right:
                 case Key.D:
-                    this.Position += new Vector2(value, 0);
+                    if (keyInput.IsDown)
+                        this.Position += new Vector2(value, 0);
                     break;
 
                 case Key.Up:
                 case Key.W:
-                    this.Position += new Vector2(0f, -value);
+                    //this.Velocity += new Vector2(0f, -value);
+                    this.Jump();
                     break;
 
                 case Key.Down:
                 case Key.S:
-                    this.Position += new Vector2(0f, value);
+                    if (keyInput.IsDown)
+                        this.Velocity += new Vector2(0f, value);
                     break;
             }
             

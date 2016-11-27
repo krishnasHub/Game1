@@ -18,6 +18,7 @@ using Engine2.Physics.Block;
 using Engine2.Physics.Actor;
 using Game1.Actors;
 using OpenTK.Input;
+using Engine2.Physics.Level;
 
 namespace Game1
 {
@@ -35,6 +36,7 @@ namespace Game1
 
             var level2 = new Level("Level2.tmx");
             g.SetLevel(level2);
+            level2.LevelPhysics = new LevelPhysics();
 
             var a = new MyActor1("tile_wall.jpg");
             a.Name = "Wall";
