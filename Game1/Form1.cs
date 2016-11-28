@@ -31,7 +31,7 @@ namespace Game1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var g = new Game(1280, 960, 4.5f);
+            var g = new Game(1280, 960, 1f);
             Constants.RootFolder = "Content";
 
             var level2 = new Level("Level2.tmx");
@@ -42,7 +42,6 @@ namespace Game1
             a.Name = "Wall";
             a.SetScale(0.05f);
             a.Position = new Vector2(350, 1050);
-            //a.Velocity = new Vector2(0.25f, 0f);
             a.BindToView = true;
             a.PhysicsComponent = new ActorPhysics();
 
@@ -50,11 +49,10 @@ namespace Game1
             b.Name = "Grass";
             b.SetScale(0.1f);
             b.Position = new Vector2(450, 1050);
-            //b.Velocity = new Vector2(-1f, 0f);
+            b.BounceFactor = 20f;
             b.PhysicsComponent = new ActorPhysics();
 
             level2.SetBlockPhysics(2, new SolidBlockPhysics());
-
             level2.AddActor(a);
             level2.AddActor(b);
 

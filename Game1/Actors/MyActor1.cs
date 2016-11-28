@@ -47,14 +47,13 @@ namespace Game1.Actors
 
                 case Key.Up:
                 case Key.W:
-                    //this.Velocity += new Vector2(0f, -value);
                     this.Jump();
                     break;
 
                 case Key.Down:
                 case Key.S:
                     if (keyInput.IsDown)
-                        this.Velocity += new Vector2(0f, value);
+                        this.Position += new Vector2(0f, value);
                     break;
             }
             
