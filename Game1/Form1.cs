@@ -31,21 +31,21 @@ namespace Game1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var g = new Game(1280, 960, 1f);
+            var g = new Game(1280, 960, 4.5f);
             Constants.RootFolder = "Content";
 
             var level2 = new Level("Level2.tmx");
             g.SetLevel(level2);
             level2.LevelPhysics = new LevelPhysics();
 
-            var a = new MyActor1("tile_wall.jpg");
+            var a = new MyActor1();
             a.Name = "Wall";
-            a.SetScale(0.05f);
-            a.Position = new Vector2(350, 1050);
+            a.SetScale(1.25f);
+            a.Position = new Vector2(400, 950);
             a.BindToView = true;
             a.PhysicsComponent = new ActorPhysics();
 
-            var b = new MyActor1("tile_grass.png");
+            var b = new MyActor2("tile_grass.png");
             b.Name = "Grass";
             b.SetScale(0.1f);
             b.Position = new Vector2(450, 1050);
