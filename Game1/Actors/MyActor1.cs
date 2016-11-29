@@ -4,6 +4,7 @@ using OpenTK;
 using OpenTK.Input;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -37,6 +38,7 @@ namespace Game1.Actors
             tileSheet.SpriteWidth = 672f / tileSheet.Columns;
             tileSheet.SpriteHeight = 192f / tileSheet.Rows;
             tileSheet.CurrentSprite = currentIndex;
+            tileSheet.SpriteBuffer = new RectangleF(10f, 0f, 10f, 15f);
 
             this.TileSheet = tileSheet;
         }
