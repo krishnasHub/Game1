@@ -53,6 +53,7 @@ namespace Game1
             b.PhysicsComponent = new ActorPhysics();
 
             level2.SetBlockPhysics(2, new SolidBlockPhysics());
+            level2.SetBlockPhysics(4, new LadderBlockPhysics());
             level2.AddActor(a);
             level2.AddActor(b);
 
@@ -64,6 +65,7 @@ namespace Game1
             g.AddKeyEvent(Key.W, a.MovePlayer);
             g.AddKeyEvent(Key.Down, a.MovePlayer);
             g.AddKeyEvent(Key.S, a.MovePlayer);
+            g.AddKeyEvent(Key.Space, a.MovePlayer);
 
             g.Run();
         }

@@ -17,7 +17,8 @@ namespace Game1.Actors
 
         private int[] leftIndices = { 1, 2, 3, 4, 5, 6 };
         private int[] rightIndices = { 15, 16, 17, 18, 19, 20 };
-        private int idleIndex = 8;
+        private int ladderClimbIndex = 49;
+        private int idleIndex = 46;
         private int leftJumpIndex = 7;
         private int rghtJumpIndex = 21;
         private int currentIndex = 1;
@@ -38,7 +39,7 @@ namespace Game1.Actors
             tileSheet.SpriteWidth = 672f / tileSheet.Columns;
             tileSheet.SpriteHeight = 192f / tileSheet.Rows;
             tileSheet.CurrentSprite = currentIndex;
-            tileSheet.SpriteBuffer = new RectangleF(10f, 0f, 10f, 15f);
+            tileSheet.SpriteBuffer = new RectangleF(12f, 0f, 15f, 15f);
 
             this.TileSheet = tileSheet;
         }
@@ -128,14 +129,20 @@ namespace Game1.Actors
 
                 case Key.Up:
                 case Key.W:
-                    jumped = true;
-                    this.Jump();
+                    if (keyInput.IsDown)
+                        this.Position += new Vector2(0f, -value);
+                    currentIndex = ladderClimbIndex;
                     break;
 
                 case Key.Down:
                 case Key.S:
                     if (keyInput.IsDown)
                         this.Position += new Vector2(0f, value);
+                    break;
+
+                case Key.Space:
+                    jumped = true;
+                    this.Jump();
                     break;
             }
             
