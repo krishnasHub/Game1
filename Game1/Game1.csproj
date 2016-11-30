@@ -58,6 +58,11 @@
   <ItemGroup>
     <Compile Include="Actors\MyActor1.cs" />
     <Compile Include="Actors\MyActor2.cs" />
+    <Compile Include="Examples\ExampleAttribute.cs" />
+    <Compile Include="Examples\Plane.cs" />
+    <Compile Include="Examples\Shape.cs" />
+    <Compile Include="Examples\T04_Vertex_Lighting .cs" />
+    <Compile Include="Examples\Utilities.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

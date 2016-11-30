@@ -19,6 +19,7 @@ using Engine2.Physics.Actor;
 using Game1.Actors;
 using OpenTK.Input;
 using Engine2.Physics.Level;
+using Game1.Examples;
 
 namespace Game1
 {
@@ -68,6 +69,15 @@ namespace Game1
             g.AddKeyEvent(Key.Space, a.MovePlayer);
 
             g.Run();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            using (T04_Vertex_Lighting example = new T04_Vertex_Lighting())
+            {
+                Utilities.SetWindowTitle(example);
+                example.Run(30.0, 0.0);
+            }
         }
     }
 }
