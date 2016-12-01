@@ -72,12 +72,16 @@ namespace Game1
 
             var light1 = LightSourceManager.GetLightSource(a);
             light1.Intensity = 50f;
+            light1.Color = Color.Gold;
 
             var light2 = LightSourceManager.GetLightSource(b);
+            light2.Color = Color.Yellow;
+            light2.Intensity = 50f;
 
             var light3 = LightSourceManager.GetLightSource();
-            light3.Position = new Vector2(a.Position.X, a.Position.Y - 200);
-            light3.Intensity = 75f;
+            light3.Position = new Vector2(a.Position.X, a.Position.Y + 200);
+            light3.Intensity = 50f;
+            light3.Color = Color.DarkBlue;
 
             level2.AddActor(light1);
             level2.AddActor(light2);
