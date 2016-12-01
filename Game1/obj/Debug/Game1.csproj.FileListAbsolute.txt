@@ -25,3 +25,5 @@ C:\Users\krish\Documents\Visual Studio 2015\Projects\Game1\Game1\bin\Debug\Conte
 C:\Users\krish\Documents\Visual Studio 2015\Projects\Game1\Game1\bin\Debug\Content\Actors\actor_tilesheet2.png
 C:\Users\krish\Documents\Visual Studio 2015\Projects\Game1\Game1\bin\Debug\Content\Actors\actor_tilesheet3.png
 C:\Users\krish\Documents\Visual Studio 2015\Projects\Game1\Game1\bin\Debug\Content\Actors\actor_tilesheet4.png
+C:\Users\krish\Documents\Visual Studio 2015\Projects\Game1\Game1\bin\Debug\Engine2.Lighting.dll
+C:\Users\krish\Documents\Visual Studio 2015\Projects\Game1\Game1\bin\Debug\Engine2.Lighting.pdb

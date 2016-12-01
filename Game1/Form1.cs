@@ -20,6 +20,7 @@ using Game1.Actors;
 using OpenTK.Input;
 using Engine2.Physics.Level;
 using Game1.Examples;
+using Engine2.Lighting.Light;
 
 namespace Game1
 {
@@ -67,6 +68,20 @@ namespace Game1
             g.AddKeyEvent(Key.Down, a.MovePlayer);
             g.AddKeyEvent(Key.S, a.MovePlayer);
             g.AddKeyEvent(Key.Space, a.MovePlayer);
+
+
+            var light1 = LightSourceManager.GetLightSource(a);
+            light1.Intensity = 50f;
+
+            var light2 = LightSourceManager.GetLightSource(b);
+
+            var light3 = LightSourceManager.GetLightSource();
+            light3.Position = new Vector2(a.Position.X, a.Position.Y - 200);
+            light3.Intensity = 75f;
+
+            level2.AddActor(light1);
+            level2.AddActor(light2);
+            level2.AddActor(light3);
 
             g.Run();
         }
