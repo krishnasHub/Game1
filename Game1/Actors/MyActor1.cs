@@ -70,13 +70,6 @@ namespace Game1.Actors
                 jumped = false;
             }
 
-            var l = (LightSource)this.ChildActors[0];
-
-            if (l.GetIntensity() >= 1000f)
-                l.SetIntensity(5f);
-            else
-                l.SetIntensity(l.GetIntensity() + 5f);
-
             
             this.TileSheet.CurrentSprite = currentIndex;
         }

@@ -27,36 +27,6 @@ namespace Game1.Actors
             this.Position += this.Velocity;
         }
 
-        public void MovePlayer(InputEvent keyInput)
-        {
-            float value = 2f;
-
-            switch (keyInput.Key)
-            {
-                case Key.Left:
-                case Key.A:
-                    if (keyInput.IsDown)
-                        this.Position += new Vector2(-value, 0);
-                    break;
-
-                case Key.Right:
-                case Key.D:
-                    if (keyInput.IsDown)
-                        this.Position += new Vector2(value, 0);
-                    break;
-
-                case Key.Up:
-                case Key.W:
-                    this.Jump();
-                    break;
-
-                case Key.Down:
-                case Key.S:
-                    if (keyInput.IsDown)
-                        this.Position += new Vector2(0f, value);
-                    break;
-            }
-
-        }
+        
     }
 }

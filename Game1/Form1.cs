@@ -21,6 +21,7 @@ using OpenTK.Input;
 using Engine2.Physics.Level;
 using Game1.Examples;
 using Engine2.Lighting.Light;
+using Engine2.Texture;
 
 namespace Game1
 {
@@ -91,7 +92,11 @@ namespace Game1
             level2.AddActor(light2);
             level2.AddActor(light3);
 
-            //LightSourceManager.SetAmientLight(Color.Blue);
+            var back = new GameBackground("city.png");
+            level2.GameBackground = back;
+            back.Velocity = new Vector2(0.1f, 0f);
+
+            LightSourceManager.SetAmientLight(Color.Blue);
 
             g.Run();
         }
