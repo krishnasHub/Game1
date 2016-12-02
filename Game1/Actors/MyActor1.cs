@@ -1,5 +1,6 @@
 ﻿using Engine2.Actor;
 using Engine2.Input;
+using Engine2.Lighting.Light;
 using OpenTK;
 using OpenTK.Input;
 using System;
@@ -68,9 +69,15 @@ namespace Game1.Actors
                 currentIndex = pastIndex;
                 jumped = false;
             }
-                
-            
 
+            var l = (LightSource)this.ChildActors[0];
+
+            if (l.GetIntensity() >= 1000f)
+                l.SetIntensity(5f);
+            else
+                l.SetIntensity(l.GetIntensity() + 5f);
+
+            
             this.TileSheet.CurrentSprite = currentIndex;
         }
 

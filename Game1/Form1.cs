@@ -71,21 +71,27 @@ namespace Game1
 
 
             var light1 = LightSourceManager.GetLightSource(a);
-            light1.Intensity = 50f;
-            light1.Color = Color.Gold;
+            light1.SetIntensity(200f);
+            light1.SetColor(Color.Gold);
 
-            var light2 = LightSourceManager.GetLightSource(b);
-            light2.Color = Color.Yellow;
-            light2.Intensity = 50f;
+            var light2 = LightSourceManager.GetDirectedLightSource(b);
+            light2.SetColor(Color.DarkRed);
+            light2.SetIntensity(650f);
+            light2.Angle = 60f;
+            light2.Direction = new Vector2(0f, -1f);
 
-            var light3 = LightSourceManager.GetLightSource();
+            var light3 = LightSourceManager.GetDirectedLightSource();
             light3.Position = new Vector2(a.Position.X, a.Position.Y + 200);
-            light3.Intensity = 50f;
-            light3.Color = Color.DarkBlue;
+            light3.SetIntensity(500f);
+            light3.SetColor(Color.DarkBlue);
+            light3.Angle = 60f;
+            light3.Direction = new Vector2(0f, 1f);
 
             level2.AddActor(light1);
             level2.AddActor(light2);
             level2.AddActor(light3);
+
+            //LightSourceManager.SetAmientLight(Color.Blue);
 
             g.Run();
         }
