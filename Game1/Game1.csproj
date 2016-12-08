@@ -36,6 +36,9 @@
     <Reference Include="Engine2">
       <HintPath>..\..\Engine2\Engine2\bin\Debug\Engine2.dll</HintPath>
     </Reference>
+    <Reference Include="Engine2.Audio">
+      <HintPath>..\..\Engine2\Engine2.Audio\bin\Debug\Engine2.Audio.dll</HintPath>
+    </Reference>
     <Reference Include="Engine2.Lighting">
       <HintPath>..\..\Engine2\Engine2.Lighting\bin\Debug\Engine2.Lighting.dll</HintPath>
     </Reference>

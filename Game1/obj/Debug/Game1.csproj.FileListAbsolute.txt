@@ -28,3 +28,5 @@ C:\Users\krish\Documents\Visual Studio 2015\Projects\Game1\Game1\bin\Debug\Conte
 C:\Users\krish\Documents\Visual Studio 2015\Projects\Game1\Game1\bin\Debug\Engine2.Lighting.dll
 C:\Users\krish\Documents\Visual Studio 2015\Projects\Game1\Game1\bin\Debug\Engine2.Lighting.pdb
 C:\Users\krish\Documents\Visual Studio 2015\Projects\Game1\Game1\bin\Debug\Content\city.png
+C:\Users\krish\Documents\Visual Studio 2015\Projects\Game1\Game1\bin\Debug\Engine2.Audio.dll
+C:\Users\krish\Documents\Visual Studio 2015\Projects\Game1\Game1\bin\Debug\Engine2.Audio.pdb

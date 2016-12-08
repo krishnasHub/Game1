@@ -88,9 +88,6 @@ namespace Game1
             light3.Angle = 60f;
             light3.Direction = new Vector2(0f, 1f);
 
-            level2.AddActor(light1);
-            level2.AddActor(light2);
-            level2.AddActor(light3);
 
             var back = new GameBackground("city.png");
             level2.GameBackground = back;
